@@ -55,8 +55,7 @@
 }
 
 .hide-general-dropdown {
-    display: none;
-    animation: hide-content 1s ease-in-out forwards;
+    animation: hide-content 125ms ease-in-out forwards;
 }
 
 .section {
@@ -154,8 +153,7 @@ textarea {
 }
 
 .hide-professional-profile-dropdown {
-    display: none;
-    animation: hide-pro-content 1s ease-in-out forwards;
+    animation: hide-pro-content 125ms ease-in-out forwards;
 }
 
 .employment-history-dropdown {
@@ -168,8 +166,7 @@ textarea {
 }
 
 .hide-employment-history-dropdown {
-    display: none;
-    animation: hide-content 1s ease-in-out forwards;
+    animation: hide-content 125ms ease-in-out forwards;
 }
 
 .education-dropdown {
@@ -180,8 +177,7 @@ textarea {
 }
 
 .hide-education-dropdown {
-    display: none;
-    animation: hide-content 1s ease-in-out forwards;
+    animation: hide-content 125ms ease-in-out forwards;
 }
 
 .add-organasation {
