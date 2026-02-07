@@ -1,0 +1,44 @@
+#root {
+
+  background: whitesmoke;
+  color: black;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  --accent-color: hsl(213, 51%, 49%);
+}
+
+.getInfoBox {
+  background-color: hsl(5, 5%, 90%);
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+  width: fit-content;
+  min-width: 200px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  background-color: whitesmoke;
+  border: 1px solid var(--accent-color);
+  height: 2rem;
+  font-size: 2rem;
+  color: black;
+  color-scheme: light;
+  border: 1px solid black;
+}
+
+label {
+  font-size: 2rem;
+  font-weight: bold;
+  background: whitesmoke;
+}
+
+.main-window {
+  width: 60vw;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  gap: 3rem;
+}

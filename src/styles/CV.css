@@ -1,0 +1,162 @@
+.cv {
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    padding: 1rem;
+    max-width: 210mm;
+    text-align: center;
+    height: 1123px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.links {
+    position: absolute;
+    display: flex;
+    right: 2rem;
+    top: 1rem;
+}
+
+button svg {
+    display: block;
+}
+
+.pdf-button {
+    fill: rgb(100, 0, 0);
+}
+
+.print-button svg{
+    stroke: rgb(0, 0, 100);
+}
+
+.pdf-button svg:hover {
+    transition: all ease-in-out 300ms;
+    fill: red;
+}
+
+.pdf-button svg:active {
+    fill: darkred;
+}
+
+.print-button svg:hover {
+    transition: all ease-in-out 300ms;
+    stroke: blue;
+}
+
+.print-button svg:active {
+    stroke: darkblue;
+}
+
+.link {
+    background: #FFF;
+    color: black;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+}
+
+.link:active {
+    border: none;
+}
+
+h1 {
+    max-width: 100ch;
+    text-align: center;
+}
+
+.phoneAndEmail {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  h3:nth-child(1){
+    grid-column: 1;
+    justify-self: start;
+  }
+  
+  h3:nth-child(2) {
+    grid-column: 3;
+    justify-self: end;
+  }
+  
+  .sectionDevider {
+    height: 0.2rem;
+    box-shadow: 0px 2px 3px black;
+    background-color: black;
+  }
+
+  .section-name {
+    background-color: rgb(200, 200, 200 , 0.3);
+    padding: 0.1rem;
+    position: relative;
+  }
+  .section-name::after {
+    position: absolute;
+    content: "";
+    width: 20rem;
+    left: calc(50% - 10rem);
+    bottom: 0.2rem;
+    background-color: black;
+    height: 0.2rem;
+  }
+
+  p {
+    max-width: 100ch;
+  }
+
+@media print {
+    body {
+        display: block !important;
+        margin: 0;
+    }
+    .input-data, .input-data *, .links {
+        display: none !important;
+    }
+    .cv {
+        position: absolute;
+        left: -11rem;
+        top: 0;
+        width: 210mm;
+        margin: 0 auto;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .cv {
+        transform: translate(-10%, -10%) scale(0.75);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cv {
+        transform: translate(-20%, -10%) scale(0.7);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .cv {
+        transform: translate(-25%, -12%) scale(0.6);
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .cv {
+        transform: translate(-30%, -13%) scale(0.6);
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .cv {
+        transform: translate(-28%, -15%) scale(0.6);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cv {
+        transform: translate(-30%, -15%) scale(0.55);
+    }
+}

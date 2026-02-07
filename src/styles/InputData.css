@@ -1,0 +1,302 @@
+@keyframes show-content {
+    0% {
+      transform: translateY(-100%) ;
+      display: none;
+    }
+    100% {
+      transform: translateY(0);
+      display: flex;
+    }
+}
+
+@keyframes hide-content {
+    0% {
+        transform: translateY(0) ;
+        display: flex;
+        flex-direction: column;
+    }
+    100% {
+        transform: translateY(-200%);
+        flex-direction: column;
+        display: none;
+    }
+}
+
+@keyframes hide-pro-content {
+    0% {
+        transform: translateY(0) ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    100% {
+        transform: translateY(-200%);
+        display: none;
+    }
+}
+
+.input-data {
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    overflow: scroll;
+    scrollbar-color: black rgb(210, 210, 210);
+    padding-right: 1rem;
+}
+
+.general-dropdown {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 4;
+    animation: show-content 275ms ease-in-out forwards;
+}
+
+.hide-general-dropdown {
+    display: none;
+    animation: hide-content 1s ease-in-out forwards;
+}
+
+.section{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 0.5rem;
+    border: 3px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    position: relative;
+    z-index: 10;
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+.section > h1 {
+    text-align: start;
+}
+
+.section > button {
+    justify-self: end;
+}
+
+.general-section, .professional-profile-section, .employment-history-section, .education-section{
+    --hover-bg: whitesmoke;
+    --hover-color: black;
+}
+
+.general-section:hover, .professional-profile-section:hover, .employment-history-section:hover, .education-section:hover {
+    --hover-bg: black;
+    --hover-color: whitesmoke;
+}
+
+.drow-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background: var(--hover-bg);
+    color: var(--hover-color);
+    border: 1px solid black;
+    transition: all 250ms;
+}
+
+.save-cv-button {
+    position: absolute;
+    bottom: 5%;
+    width: 10vw;
+    height: 3rem;
+    text-align: center;
+    left: calc(20% - 5vw);
+    color: black;
+    background: whitesmoke;
+    border: 1px solid black;
+    padding: 0;
+}
+
+.save-cv-button:hover {
+    color: whitesmoke;
+    background: black;
+    transition: all 200ms;
+    border: 1px solid black;
+}
+
+textarea {
+    background: whitesmoke;
+    color: black;
+}
+
+.pro-pro-textarea {
+    width: 450px;
+    resize: none;
+    overflow-y: scroll;
+    margin-top: 1rem;
+    min-height: 100px;
+}
+
+.professional-profile-dropdown {
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    animation: show-content 275ms ease-in-out forwards;
+}
+
+.hide-professional-profile-dropdown {
+    display: none;
+    animation: hide-pro-content 1s ease-in-out forwards;
+}
+
+.employment-history-dropdown {
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    animation: show-content 275ms ease-in-out forwards;
+}
+
+.hide-employment-history-dropdown {
+    display: none;
+    animation: hide-content 1s ease-in-out forwards;
+}
+
+.education-dropdown {
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    animation: show-content 275ms ease-in-out forwards;
+}
+
+.hide-education-dropdown {
+    display: none;
+    animation: hide-content 1s ease-in-out forwards;
+}
+
+.add-organasation {
+    background-color: white;
+    color: black;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-top: 4rem;
+}
+
+.school-block {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    position: relative;
+}
+
+.school-block::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    height: 0.25rem;
+    border-radius: 1rem;
+}
+
+.work-block {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    position: relative;
+}
+
+.work-block::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    height: 0.25rem;
+    border-radius: 1rem;
+}
+
+.input-data-show-menu {
+    background: whitesmoke;
+    border: 1px solid black;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    color: black;
+    fill: black;
+    display: none;
+    padding: 0;
+}
+.input-data-show-menu svg {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 2051px) {
+    .input-data {
+      display: flex !important;
+    }
+    .cv {
+        display: block !important;
+    }
+    .main-window {
+        justify-content: space-around !important;
+    }
+    .input-data-show-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 2050px) {
+    .input-data {
+      display: none;
+      height: 70vh;
+      margin-bottom: 4rem;
+    }
+    .input-data-show-menu {
+        display: block;
+    }
+    .save-cv-button {
+        left: calc(50% - 20%);
+        bottom: -0.5rem;
+        width: 50%;
+    }
+}
+
+/* 
+@media screen and (max-width: 2050px) {
+    .save-cv-button {
+        left: -1rem;
+        width: 20vw;
+        left: calc(20% - 12vw);
+    }
+}
+@media screen and (max-width: 1550px) {
+    .save-cv-button {
+        width: 15vw;
+        left: calc(20% - 12vw);
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .save-cv-button {
+        left: 1rem;
+        width: 7vw;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .main-window {
+        width: 70vw;
+    }
+} */
+

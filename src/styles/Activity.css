@@ -1,0 +1,18 @@
+.work-title {
+    display: grid;
+    width: 85ch;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 0.5em;
+}
+
+.dotted-line {
+    border-bottom: 2px dotted black;
+    transform: translate(0, 0.4rem);
+}
+
+.work-description {
+    padding-left: 1rem;
+    text-align: start;
+    font-weight: 500;
+}
