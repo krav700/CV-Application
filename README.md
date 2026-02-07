@@ -1,6 +1,6 @@
 # CV-Builder
 
-This application provides a minimal and easy to use template for creating a basic CV with functionality to download it as a PDF or print it.
+This application provides a minimal and easy to use template for creating a basic CV with functionality to download it as a PDF or print it. Live preview [here!](https://personal-cv-application.netlify.app/)
 
 The user can input:
 
