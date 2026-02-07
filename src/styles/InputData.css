@@ -1,17 +1,17 @@
 @keyframes show-content {
     0% {
-      transform: translateY(-100%) ;
-      display: none;
+        transform: translateY(-100%);
+        display: none;
     }
     100% {
-      transform: translateY(0);
-      display: flex;
+        transform: translateY(0);
+        display: flex;
     }
 }
 
 @keyframes hide-content {
     0% {
-        transform: translateY(0) ;
+        transform: translateY(0);
         display: flex;
         flex-direction: column;
     }
@@ -24,7 +24,7 @@
 
 @keyframes hide-pro-content {
     0% {
-        transform: translateY(0) ;
+        transform: translateY(0);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -59,7 +59,7 @@
     animation: hide-content 1s ease-in-out forwards;
 }
 
-.section{
+.section {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
@@ -82,12 +82,18 @@
     justify-self: end;
 }
 
-.general-section, .professional-profile-section, .employment-history-section, .education-section{
+.general-section,
+.professional-profile-section,
+.employment-history-section,
+.education-section {
     --hover-bg: whitesmoke;
     --hover-color: black;
 }
 
-.general-section:hover, .professional-profile-section:hover, .employment-history-section:hover, .education-section:hover {
+.general-section:hover,
+.professional-profile-section:hover,
+.employment-history-section:hover,
+.education-section:hover {
     --hover-bg: black;
     --hover-color: whitesmoke;
 }
@@ -97,7 +103,7 @@
     height: 50px;
     border-radius: 50px;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     background: var(--hover-bg);
     color: var(--hover-color);
     border: 1px solid black;
@@ -243,7 +249,7 @@ textarea {
 
 @media screen and (min-width: 2051px) {
     .input-data {
-      display: flex !important;
+        display: flex !important;
     }
     .cv {
         display: block !important;
@@ -258,9 +264,9 @@ textarea {
 
 @media screen and (max-width: 2050px) {
     .input-data {
-      display: none;
-      height: 70vh;
-      margin-bottom: 4rem;
+        display: none;
+        height: 70vh;
+        margin-bottom: 4rem;
     }
     .input-data-show-menu {
         display: block;
@@ -271,32 +277,3 @@ textarea {
         width: 50%;
     }
 }
-
-/* 
-@media screen and (max-width: 2050px) {
-    .save-cv-button {
-        left: -1rem;
-        width: 20vw;
-        left: calc(20% - 12vw);
-    }
-}
-@media screen and (max-width: 1550px) {
-    .save-cv-button {
-        width: 15vw;
-        left: calc(20% - 12vw);
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    .save-cv-button {
-        left: 1rem;
-        width: 7vw;
-    }
-}
-
-@media screen and (max-width: 790px) {
-    .main-window {
-        width: 70vw;
-    }
-} */
-

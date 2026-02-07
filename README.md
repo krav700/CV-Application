@@ -1,16 +1,36 @@
-# React + Vite
+# CV-Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application provides a minimal and easy to use template for creating a basic CV with functionality to download it as a PDF or print it.
 
-Currently, two official plugins are available:
+The user can input:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## General Infromation
 
-## React Compiler
+- Full Name
+- Phone Number
+- Email
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Proffesional Profile
 
-## Expanding the ESLint configuration
+- Couple of sentences describing them
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Employment History
+
+### Organisations they have worked at
+
+- Organasation name
+- Title
+- Main Responsibilities
+- Date from the beggining of working there
+- Date untill the last day
+
+## Education
+
+### Organisations they have studied at
+
+- Organasation name
+- Title
+- Date from the beggining of studying there there
+- Date untill the last day
+
+The application was build with React utilizing the Vite template.
