@@ -33,4 +33,4 @@ The user can input:
 - Date from the beggining of studying there there
 - Date untill the last day
 
-The application was build with React utilizing the Vite template and deployed using netlify!
+The application was build with [React](https://react.dev) utilizing the [Vite](https://vite.dev) template and deployed using [netlify](https://www.netlify.com)!
